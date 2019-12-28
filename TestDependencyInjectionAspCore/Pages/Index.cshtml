@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dependency Injection";
+}
+<div class="text-center">
+    <div class="jumbotron">
+        <h1 class="display-4">This section show "AddTransient" Life Cycle </h1>
+        <p class="lead">This is a simple for happend </p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a id="ATransient" class="btn btn-primary btn-lg" href="#" role="button" onclick="CallTransient()" data-toggle="collapse" data-target="#ResponseTransient">Call Me !</a>
+        <br />
+        <br />
+        <div id="ResponseTransient" class="collapse">
+            <div id="AlertResponseTransient" class="alert alert-primary" role="alert">
+
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">This section show "AddScoped" Life Cycle </h1>
+        <p class="lead">This is a simple for happend </p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="CallScoped()" data-toggle="collapse" data-target="#ResponseScoped">Call Me !</a>
+        <br />
+        <br />
+        <div id="ResponseScoped" class="collapse">
+            <div id="AlertResponseScoped" class="alert alert-primary" role="alert">
+
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">This section show  "AddSingelton" Life Cycle </h1>
+        <p class="lead">This is a simple for happend </p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="CallSingelton()" data-toggle="collapse" data-target="#ResponseSingelton">Call Me !</a>
+        <br />
+        <br />
+        <div id="ResponseSingelton" class="collapse">
+            <div id="AlertResponseSingelton" class="alert alert-primary" role="alert">
+
+            </div>
+        </div>
+    </div>
+</div>
